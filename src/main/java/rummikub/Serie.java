@@ -6,7 +6,8 @@ public class Serie extends Combinaciones{
     public Serie(List<Ficha> fichas){
         super(fichas);
     }
-    
+
+    //como las series no deben ser del mismo color, entonces se sobreescribe el método de la superclase para poder hacer que retorne true si hay al menos dos de un mismo color.
     public boolean mismoColor(){
         int[] colores = new int[5]; //como estamos manejando los colores con números, entonces, en el índice del color, se va a ir sumando uno cada que lo vea
         for (Ficha f : fichas){
