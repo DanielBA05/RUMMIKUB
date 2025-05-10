@@ -5,7 +5,7 @@ Este repositorio contiene una implementación del juego de mesa **Rummikub**, de
 ## Descripción del juego
 
 Rummikub es un juego clásico que se juega con 106 fichas:  
-- 104 fichas numeradas del 1 al 13 en cuatro colores (rojo, azul, negro y amarillo), cada una duplicada.  
+- 104 fichas numeradas del 1 al 13 en cuatro colores (rojo, azul, verde y amarillo), cada una duplicada.  
 - 2 comodines.  
 
 El objetivo del juego es ser el primer jugador en colocar todas sus fichas sobre la mesa formando combinaciones válidas (series o escaleras).
