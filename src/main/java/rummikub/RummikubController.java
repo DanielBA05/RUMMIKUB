@@ -208,9 +208,6 @@ public class RummikubController {
                     visitado[fila][c] = true;
                     c++;
                 }
-                if (filaCombinacion.size() == 1 or filaCombinacion.size() == 2){
-                    return new ArrayList<>();
-                }
                 else if (filaCombinacion.size() >= 3) {
                     combinaciones.add(filaCombinacion);
                 }
