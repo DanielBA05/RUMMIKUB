@@ -129,6 +129,9 @@ public class RummikubController {
     }
 
     public boolean validarJugada(List<List<Ficha>> combinaciones) {
+        if (combinaciones.isEmpty()){
+            return false;
+        }
         for (List<Ficha> c : combinaciones){
             Combinaciones combinacion = new Combinaciones(c);
             if (!combinacion.esCombinacionValida()){
