@@ -211,7 +211,7 @@ public class RummikubController {
                     visitado[fila][c] = true;
                     c++;
                 }
-                else if (filaCombinacion.size() >= 3) {
+                if (filaCombinacion.size() >= 3) {
                     combinaciones.add(filaCombinacion);
                 }
             }
