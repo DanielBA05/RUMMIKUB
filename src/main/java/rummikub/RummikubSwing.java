@@ -319,8 +319,11 @@ public class RummikubSwing extends JFrame {
                 if (ficha != null) {
                     filaActual.add(ficha);
                 } else {
+                    if (filaActual.size() == 1 || filaActual.size() == 2){ //Retorna una lista vacía si se encuentra una combinación de menos de 3 fichas
+                        return new ArrayList<>();
+                    }
                     // Solo se consideran combinaciones con al menos 3 fichas
-                    if (filaActual.size() >= 3) {
+                    else if (filaActual.size() >= 3) {
                         combinaciones.add(new ArrayList<>(filaActual));
                     }
                     filaActual.clear();
