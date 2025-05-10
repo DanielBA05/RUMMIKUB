@@ -79,7 +79,7 @@ public class GestorPartidas {
         }
         sb.append("Partidas jugadas: ").append(partidasJugadas).append(" de ").append(partidasTotales);
         sb.append("\nGanador final: ").append(obtenerGanadorFinal());
-        return sb.toString();
+        return sb.toString(); //aquí juntamos todo para tener los datos juntitos en la tabla de la interfaz
     }
 
     private int calcularPuntajeJugador(Jugador jugador) {
